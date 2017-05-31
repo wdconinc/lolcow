@@ -5,3 +5,9 @@ RUN apt-get update && apt-get install -y fortune cowsay lolcat && \
     echo 'export LC_ALL=C' >> /singularity && \
     echo '/usr/games/fortune | /usr/games/cowsay | /usr/games/lolcat' >> /singularity && \
     chmod 755 /singularity 
+
+ENV PATH /usr/games:${PATH}
+
+ENV BASE 'This is Rogue II.'
+
+ENTRYPOINT fortune
