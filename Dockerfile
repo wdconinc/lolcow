@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y fortune cowsay lolcat && \
     chmod 755 /singularity 
 
 ENV PATH /usr/games:${PATH}
-
+ENV LANG=C
 ENV BASE "This_is_Rogue_II"
 
-ENTRYPOINT fortune
+ENTRYPOINT fortune | cowsay | lolcow
