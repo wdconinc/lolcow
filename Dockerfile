@@ -8,6 +8,6 @@ RUN apt-get update && apt-get install -y fortune cowsay lolcat && \
 
 ENV PATH /usr/games:${PATH}
 
-ENV BASE 'This is Rogue II.'
+ENV BASE "This is Rogue II."
 
 ENTRYPOINT fortune
