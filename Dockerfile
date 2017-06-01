@@ -10,4 +10,4 @@ ENV PATH /usr/games:${PATH}
 ENV LANG=C
 ENV BASE "This_is_Rogue_II"
 
-ENTRYPOINT fortune | cowsay | lolcow
+ENTRYPOINT fortune | cowsay | lolcat
