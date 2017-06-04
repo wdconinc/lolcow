@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y fortune cowsay lolcat && \
     chmod 755 /singularity 
 
 ENV PATH /usr/games:${PATH}
-ENV LANGUAGE=en_US.UTF-8
-ENV LANG=C
+ENV LANGUAGE=en_US
+ENV LANG=en_US.UTF-8
 
 ENTRYPOINT fortune | cowsay | lolcat
